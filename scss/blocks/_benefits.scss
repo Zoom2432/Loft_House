@@ -1,0 +1,25 @@
+.benefits {
+    padding: 120px 0;
+}
+
+.benefits_row {
+    display: flex;
+    column-gap: 70px;
+}
+
+.benefits_item {
+    text-align: center;
+}
+
+.benefits_item_img {
+    margin-bottom: 53px;
+}
+
+.benefits_item_text {
+    font-size: 20px;
+    line-height: 1.35;
+    font-family: $font-secondary;
+    font-weight: 300;
+}
+
+

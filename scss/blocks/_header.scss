@@ -1,0 +1,74 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 74px;
+    min-height: 840px;
+    background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url('./../img/header/header-bg.jpg');
+}
+
+.header_top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    font-size: 14px;
+}
+
+.nav_list {
+    display: flex;
+    column-gap: 40px;
+}
+
+.header_title {
+    position: relative;
+    padding-bottom: 121px;
+    text-align: center;
+    font-size: 48px;
+    font-family: $font-accent;
+    color: $accent;
+    font-weight: 700;
+}
+
+.header_title_icon {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.info {
+    position: relative;
+    font-size: 18px;
+
+    &--map, &--tel {
+        padding-left: 35px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 21px;
+            height: 21px;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &--map::before {
+        background-image: url(./../img/header/map.svg);
+    }
+
+    &--tel::before {
+        background-image: url(./../img/header/phone.svg);
+    }
+}
+
+.header_footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
