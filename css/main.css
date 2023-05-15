@@ -140,6 +140,11 @@ a:hover {
   font-weight: 700;
 }
 
+.link-bold {
+  color: #D4C17F;
+  font-weight: 700;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -324,16 +329,147 @@ a:hover {
   margin-top: 1em;
 }
 
+.cta_form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px 30px;
+  align-items: center;
+}
+
 .form_input {
   height: 50px;
   padding: 12px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.2);
   color: #FFFFFF;
+  font-size: 14px;
+  transition: background-color 0.2s ease-in;
 }
 .form_input::-moz-placeholder {
   color: #BEBEBE;
 }
 .form_input::placeholder {
   color: #BEBEBE;
+}
+.form_input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.form_privacy {
+  font-size: 13px;
+  color: #E7E7E7;
+  text-align: center;
+  line-height: 1.23;
+}
+
+.form_button {
+  height: 50px;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-align: center;
+  padding: 12px;
+  background-color: #D4C17F;
+  transition: background-color 0.2s ease-in;
+}
+.form_button:hover {
+  background-color: #ddc676;
+}
+
+.video {
+  text-align: center;
+}
+
+.video_link {
+  position: relative;
+  display: inline-block;
+}
+.video_link::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(36, 43, 51, 0.8);
+  transition: background-color 0.2s ease-in;
+}
+.video_link:hover::before {
+  background: rgba(36, 43, 51, 0.7);
+}
+
+.video_icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in;
+}
+
+.video_link:hover .video_icon {
+  transform: translate(-50%, -50%) scale(1.2);
+  filter: saturate(1.3);
+}
+
+.section_map {
+  padding: 180px 0;
+}
+
+.section_map_title {
+  margin-bottom: 88px;
+}
+
+.map {
+  height: 358px;
+  background: #626262;
+}
+
+.feedback {
+  padding-bottom: 180px;
+}
+
+.feedback_title {
+  margin-bottom: 38px;
+}
+
+.feedback_form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  align-items: center;
+}
+
+.footer {
+  padding-top: 72px;
+  padding-bottom: 51px;
+  background-color: #2D343C;
+  font-size: 14px;
+  letter-spacing: 0.05rem;
+}
+
+.footer_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.footer_logo {
+  margin-top: -12px;
+}
+
+.footer_nav_list {
+  display: grid;
+  gap: 15px;
+}
+
+.footer_socials {
+  display: flex;
+  -moz-column-gap: 22px;
+       column-gap: 22px;
+  align-items: center;
+}
+
+.footer_address {
+  display: grid;
+  gap: 20px;
 }/*# sourceMappingURL=main.css.map */
